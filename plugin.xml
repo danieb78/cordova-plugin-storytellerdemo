@@ -7,7 +7,7 @@
         <engine name="cordova" version=">=3.0.0" />
     </engines>
     <platform name="android">
-        <config-file target="res/xml/config.xml" parent="/*">
+        <config-file target="config.xml" parent="/*">
             <feature name="StoryTellerDemo">
                 <param name="android-package" value="com.example.storytellerdemo.MyPlugin" />
             </feature>
