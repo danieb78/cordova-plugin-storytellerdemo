@@ -1,0 +1,17 @@
+<plugin id="com.example.storytellerdemo" version="1.0.0" xmlns="http://cordova.apache.org/ns/plugins/1.0">
+    <name>StoryTellerDemo</name>
+    <description>A sample Cordova plugin</description>
+    <license>MIT</license>
+    <keywords>cordova, plugin</keywords>
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="StoryTellerDemo">
+                <param name="android-package" value="com.example.storytellerdemo.MyPlugin" />
+            </feature>
+        </config-file>
+        <source-file src="src/android/MyPlugin.kt" target-dir="app/src/main/java/com/example/storytellerdemo/MyPlugin/" />
+    </platform>
+</plugin>
