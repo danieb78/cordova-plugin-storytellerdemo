@@ -39,9 +39,10 @@ class MyPlugin : CordovaPlugin() {
     override fun execute(action: String, args: JSONArray, callbackContext: CallbackContext): Boolean {
         return when (action) {
             "showMainScreen" -> {
-                val apiKey = args.getString(0)
+                val url = args.getString(0) // URL to load in the WebView
+                val apiKey = args.getString(1) // API key
                 cordova.activity.runOnUiThread {
-                    showMainScreen(apiKey, callbackContext)
+                    showMainScreen(url, apiKey, callbackContext)
                 }
                 true
             }

@@ -11,7 +11,9 @@
             <feature name="StoryTellerDemo">
                 <param name="android-package" value="com.example.storytellerdemo.MyPlugin" />
             </feature>
+            <preference name="android-build.gradle" value="src/main/kotlin/com/example/myplugin/build.gradle"/>
         </config-file>
-        <source-file src="src/android/MyPlugin.kt" target-dir="app/src/main/java/com/example/storytellerdemo/MyPlugin/" />
+        <source-file src="src/main/kotlin/com/example/myplugin/MyPlugin.kt" target-dir="src/main/kotlin/com/example/myplugin" />
+        <resource-file src="www/myplugin.js" target="plugins/com.example.storytellerdemo/www/myplugin.js" />
     </platform>
 </plugin>
